@@ -15,16 +15,20 @@ def sort_array_asc(array)
     end
   sorted
 end
-def sort_array_asc(array)
-  sorted = []
-pivot = array.shift
-  less, more = array.partition do |e|
-    e < pivot
-  end
-#here he makes two groups
-  sorted << sort_array_asc(less)
-  sorted << [pivot]
-  sorted << sort_array_asc(more)
-#here above is the recursion
+def sort_array_asc(array, sorted = nil)
 
+#recursive case
+return sorted if array.length <= 0
+ #limiting case below
+  if sorted == nil
+     sorted = []
+  end
+  sorted <<array.min 
+  array.delete(array.min)
+
+  ## recursively call, but sorted is not nil
+  sort_array_asc(array, sorted)
 end
+
+
+
