@@ -93,9 +93,8 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  a_firstletter = []
+  
    array.select do |word|
-     a_firstletter.push(word.start_with?('a'))
-   end
-  a_firstletter
+    word.start_with?('a')
+  end  
 end
