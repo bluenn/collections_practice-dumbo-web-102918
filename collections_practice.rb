@@ -101,7 +101,5 @@ end
 def sum_array(numbers)
   array.inject(0) do |accumulator, element|
     accumulator + element
-  end  
-end  
-
-
+  end
+end
