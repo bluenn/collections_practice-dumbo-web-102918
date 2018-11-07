@@ -47,3 +47,10 @@ def sort_array_desc(array)
  #sort it ascending, then reverse it
  end
 end
+
+sort_array_char_count(array)
+#sort array of strings by length
+array.sort do |a, b|
+  a.length <=> b.length
+  end
+end
