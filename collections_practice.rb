@@ -78,7 +78,4 @@ end
 
   def reverse_array(array)
     #array.reverse
-    array.sort_by do |element|
-      -element
-    end
   end
