@@ -18,17 +18,13 @@ end
 def sort_array_asc(array)
   sorted = []
 pivot = array.shift
-  less, more = array.partition do |e| 
-    e < pivot 
-  end  
+  less, more = array.partition do |e|
+    e < pivot
+  end
 #here he makes two groups
-  sorted << sort_array_asc(less) 
-  sorted << [pivot] 
+  sorted << sort_array_asc(less)
+  sorted << [pivot]
   sorted << sort_array_asc(more)
 #here above is the recursion
 
 end
-
-
-
-
