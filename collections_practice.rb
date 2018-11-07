@@ -60,3 +60,9 @@ def sort_array_char_count(array)
   #no block, just put &:length in paren
   array.sort_by(&:length)
 end
+
+  def swap_elements(array)
+# swap second and third 
+    array[2], array[1] = array[1], array[2]    
+  end 
+   
