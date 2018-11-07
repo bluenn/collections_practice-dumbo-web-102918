@@ -96,7 +96,6 @@ def find_a(array)
   a_firstletter = []
    array.select do |word|
      a_firstletter.push(word.start_with?('a'))
-     end
    end
   a_firstletter
 end
