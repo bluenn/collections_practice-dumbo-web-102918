@@ -54,3 +54,9 @@ array.sort do |a, b|
   a.length <=> b.length
   end
 end
+
+def sort_array_char_count(array)
+#sort array of strings by length
+array.sort_by do |&: length|
+  end
+end
