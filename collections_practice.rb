@@ -19,7 +19,7 @@ return sorted if array.length <= 0
   if sorted == nil
      sorted = []
   end
-  
+
   sorted <<array.min
   array.delete(array.min)
 
@@ -38,6 +38,3 @@ end
   array.sort do |b, a|
     b <=> a
   end
-
-
-
