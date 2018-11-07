@@ -80,7 +80,5 @@ end
     #array.reverse
     array.sort_by do |element|
       -element
-    end  
+    end
   end
-
-  
