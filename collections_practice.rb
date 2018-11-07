@@ -94,7 +94,7 @@ end
 
 def find_a(array)
   a_firstletter = []
-   array.each_index.select do |word, index|
+   array.select _with_index do |word, index|
      if word[0] == 'a'
        a_firstletter.push(word)
      end
