@@ -117,17 +117,16 @@ def sum_array(numbers)
 end
 
 def add_s(array)
-  #Build a method that adds an "s" to each word in the array 
-  #except for the second element in the array 
+  #Build a method that adds an "s" to each word in the array
+  #except for the second element in the array
   #("feet" is already plural).
   plurals = []
       array.each_with_index do |word,index|
-        if index != 1 
+        if index != 1
           word = word + "s"
         end
-        plurals << word 
+        plurals << word
   end
-  
+
   plurals
 end
-
