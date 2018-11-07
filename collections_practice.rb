@@ -63,11 +63,14 @@ end
 
   def swap_elements(array)
 # swap second and third
-    swapped = []
+    # swapped = []
     array[2], array[1] = array[1], array[2]
-
-    array.each do |element|
-    swapped << element
+    array.map do |element|
+      element
     end
-    swapped
+  #  #then use each to get new array
+  #   array.each do |element|
+  #   swapped << element
+  #   end
+  #   swapped
   end
