@@ -68,7 +68,8 @@ end
     array.map do |element|
       element
     end
-  #  #then use each to get new array
+  # or can use each to get new array
+  #but have to say swapped = [] first and return swapped
   #   array.each do |element|
   #   swapped << element
   #   end
