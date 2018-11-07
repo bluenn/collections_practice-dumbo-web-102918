@@ -35,27 +35,27 @@ def sort_array_asc(array)
 end
 
  def sort_array_desc(array)
-  array.sort do |a, b|
+    array.sort do |a, b|
     #a, b stay same order in pipe
     #but reversed in spaceship
-    b <=> a
-  end
+      b <=> a
+    end
 end
 
 def sort_array_desc(array)
- array.sort.reverse
- #sort it ascending, then reverse it
+  array.sort.reverse
+  #sort it ascending, then reverse it
 end
 
 
 def sort_array_char_count(array)
-#sort array of strings by length
-array.sort do |a, b|
-  a.length <=> b.length
+  #sort array of strings by length
+  array.sort do |a, b|
+    a.length <=> b.length
   end
 end
 
 def sort_array_char_count(array)
-#use sort by length
-array.sort_by do |&: length|
+  #use sort by length
+  array.sort_by do |&: length|
 end
