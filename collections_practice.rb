@@ -48,7 +48,7 @@ def sort_array_desc(array)
  end
 end
 
-sort_array_char_count(array)
+def sort_array_char_count(array)
 #sort array of strings by length
 array.sort do |a, b|
   a.length <=> b.length
