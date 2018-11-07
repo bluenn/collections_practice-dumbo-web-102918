@@ -79,3 +79,12 @@ end
   def reverse_array(array)
     #array.reverse
   end
+
+def kesha_maker(array)
+  new_array = []
+  array.each_with_index do |element, index|
+    "$" = element[2]
+    new_array.push(element)
+  end
+  new_array
+end
