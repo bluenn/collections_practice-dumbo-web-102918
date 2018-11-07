@@ -75,9 +75,9 @@ end
   #   end
   #   swapped
   end
-  
+
   def reverse_array
     array.sort do |a, b|
       b <==> a
-    end  
-  end  
+    end
+  end
