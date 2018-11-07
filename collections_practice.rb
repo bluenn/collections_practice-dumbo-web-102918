@@ -84,6 +84,9 @@ def kesha_maker(array)
   new_array = []
   array.each_with_index do |element, index|
     element[2] = '$'
+    #this assigns $ to element[2]
+    # if wrote '$' = element[2], then would have assigned 
+    # the element[2] value to $!!
     new_array.push(element)
   end
   new_array
