@@ -39,3 +39,9 @@ end
     b <=> a
   end
 end
+
+def sort_array_desc(array)
+ array.sort.reverse
+ #sort it ascending, then reverse it
+ end
+end
