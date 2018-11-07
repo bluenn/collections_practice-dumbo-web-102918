@@ -99,7 +99,7 @@ def find_a(array)
 end
 
 def sum_array(numbers)
-  array.inject(0) do |accumulator, element|
+  numbers.inject(0) do |accumulator, element|
     accumulator + element
   end
 end
