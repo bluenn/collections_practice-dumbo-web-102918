@@ -38,4 +38,4 @@ end
   array.sort do |b, a|
     b <=> a
   end
-end  
+end
