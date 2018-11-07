@@ -45,8 +45,8 @@ end
 def sort_array_desc(array)
  array.sort.reverse
  #sort it ascending, then reverse it
- end
 end
+
 
 def sort_array_char_count(array)
 #sort array of strings by length
