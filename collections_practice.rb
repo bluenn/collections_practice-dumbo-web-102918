@@ -36,6 +36,8 @@ end
 
  def sort_array_desc(array)
   array.sort do |a, b|
+    #a, b stay same order in pipe
+    #but reversed in spaceship
     b <=> a
   end
 end
