@@ -94,11 +94,10 @@ end
 
 def find_a(array)
   a_firstletter = []
-   nums.select do |word|
+   array.each_index.select do |word, index|
      if word[0] == 'a'
-       a_firstletter.push(word)   
+       a_firstletter.push(word)
      end
-   end 
-  a_firstletter 
+   end
+  a_firstletter
 end
-
