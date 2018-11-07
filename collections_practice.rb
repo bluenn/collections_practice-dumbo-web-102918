@@ -15,10 +15,10 @@ def sort_array_asc(array)
     end
   sorted
 end
+
 def sort_array_asc(array, sorted = nil)
 
-#recursive case
-return sorted if array.length <= 0
+#return sorted if array.length <= 0
  #limiting case below
   if sorted == nil
      sorted = []
@@ -28,4 +28,5 @@ return sorted if array.length <= 0
 
   ## recursively call, but sorted is not nil
   sort_array_asc(array, sorted)
+  sorted
 end
