@@ -94,9 +94,8 @@ end
 
 def find_a(array)
   a_firstletter = []
-   array.select _with_index do |word, index|
-     if word[0] == 'a'
-       a_firstletter.push(word)
+   array.select do |word|
+     a_firstletter.push(word.start_with?('a'))
      end
    end
   a_firstletter
