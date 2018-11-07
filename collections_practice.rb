@@ -57,5 +57,6 @@ end
 
 def sort_array_char_count(array)
   #use sort by length
-  array.sort_by do |&:length|
+  #no block, just put &:length in paren
+  array.sort_by(&:length)
 end
