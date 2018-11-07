@@ -1,9 +1,4 @@
 
-# def sort_array_asc(array)
-#    array.sort
-#    #returns new array
-# end
-
 def sort_array_asc(array)
   sorted = []
   i = 0
@@ -32,3 +27,17 @@ return sorted if array.length <= 0
   sort_array_asc(array, sorted)
   sorted
 end
+
+#using sort method
+def sort_array_asc(array)
+   array.sort
+   #returns new array
+end
+
+ def sort_array_desc(array)
+  array.sort do |b, a|
+    b <=> a
+  end
+
+
+
