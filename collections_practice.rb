@@ -18,11 +18,13 @@ end
 
 def sort_array_asc(array, sorted = nil)
 
-#return sorted if array.length <= 0
- #limiting case below
+#this whole thing below is limiting case,
+#return sorted once array.length = 0 as you delete
+return sorted if array.length <= 0
   if sorted == nil
      sorted = []
   end
+  
   sorted <<array.min
   array.delete(array.min)
 
