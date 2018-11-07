@@ -23,12 +23,9 @@ return sorted if array.length <= 0
   if sorted == nil
      sorted = []
   end
-  sorted <<array.min 
+  sorted <<array.min
   array.delete(array.min)
 
   ## recursively call, but sorted is not nil
   sort_array_asc(array, sorted)
 end
-
-
-
