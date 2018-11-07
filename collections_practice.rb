@@ -85,9 +85,20 @@ def kesha_maker(array)
   array.each_with_index do |element, index|
     element[2] = '$'
     #this assigns $ to element[2]
-    # if wrote '$' = element[2], then would have assigned 
+    # if wrote '$' = element[2], then would have assigned
     # the element[2] value to $!!
     new_array.push(element)
   end
   new_array
 end
+
+def find_a(array)
+  a_firstletter = []
+   nums.select do |word|
+     if word[0] == 'a'
+       a_firstletter.push(word)   
+     end
+   end 
+  a_firstletter 
+end
+
