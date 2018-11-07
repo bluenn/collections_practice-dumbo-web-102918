@@ -126,7 +126,7 @@ def add_s(array)
         if index != 1
           word = word + "s"
         else
-          word  
+          word
         end
         #plurals << word
       end
